@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="unilatina" version="1.0.0">
-  <name>unilatina</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
+  <name>UNILATINA RADIO</name>
+  <description>Bienvenido a la aplicación de la radio Unilatina.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
@@ -69,8 +69,10 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
-  <allow-navigation href="http://example.com/*" />
-  <!-- Wildcards are allowed for the protocol, as a prefix to the host, or as a suffix to the path --> 
+  <allow-navigation href="http://maxcdn.bootstrapcdn.com/">
+  <allow-navigation href="http://192.99.150.52:1935/">
+  <allow-navigation href="http://192.99.150.52:1935/shoutcast/sc_yrssw/playlist.m3u8">    
+<!-- Wildcards are allowed for the protocol, as a prefix to the host, or as a suffix to the path --> 
   <allow-navigation href="*://*.example.com/*" />
    <!-- A wildcard can be used to whitelist the entire network, over HTTP and HTTPS. *NOT RECOMMENDED* --> 
    <allow-navigation href="*" /> <!-- The above is equivalent to these three declarations --> 
