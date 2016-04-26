@@ -1,0 +1,132 @@
+@font-face {
+    font-family: neue;
+    src: url(neue.otf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(bebas.ttf);
+}
+
+body {
+background-color: black;    
+    color: white;
+    font-size: 20px;
+    font-family: neue;
+    font-weight: lighter;
+border-left:0px;
+}
+
+#home {
+	background-image: url(../images/back.png);
+    background-size: cover;
+    height: 100%;
+    text-align:center;
+}
+#homeradio {
+    background-image: url(../images/backradio.jpg);
+    background-size: cover;
+    height: 100%;
+    text-align:center;
+}
+#homefaca {
+    background-image: url(../images/backfaca.jpg);
+    background-size: cover;
+    height: 100%;
+    text-align:center;
+}
+#homedos {
+    height: 80%;
+    text-align:center;
+}
+#home2 {
+    height: 60%;
+    text-align:center;
+}
+#hometree {
+	background-image: url(../images/back2.png);
+    background-size: cover;
+    height: 100%;
+    text-align:center;
+}
+
+#play {
+    height: 20%;
+    text-align:center;
+}
+#play2 {
+    height: 40%;
+    text-align:center;
+}
+#playcontrols {
+    padding-top: 30px;
+}
+
+.navbar-inner{
+    border-bottom-color: white;
+    border-style: solid;
+    border:1px;
+}
+#playcontrols {
+			text-align: center;
+		}
+#playcontrols #activityindicator, #playcontrols #stopbutton {
+			display: none;
+		}
+		
+#textpositiondiv {
+			margin-top: 1px;
+		}
+#titleunilatina{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: neue;
+    font-weight: lighter;
+}
+
+
+#logobase {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tabbar-fixed .page-content, .tabbar-through .page-content, .toolbar-fixed .page-content, .toolbar-through .page-content{
+    padding-bottom: 0px
+}
+
+.layout-dark .navbar, .layout-dark .subnavbar, .navbar.layout-dark, .subnavbar.layout-dark{
+    background-color: #170f11;
+}
+.layout-dark .login-screen-content, .layout-dark .page, .layout-dark .panel, .page.layout-dark, .panel.layout-dark {
+   background-color: #170f11; 
+}
+.list-block li{
+       background-color: #170f11; 
+
+}
+i.fa.fa-rss {
+color:#c2970d;
+}
+i.fa.fa-users {
+color:#129881;
+}
+
+#uradio{
+  background-color: #0f947e; 
+  opacity: 0.8; 
+  font-family: bebas; 
+  font-size:20px; 
+  text-align: left;
+  padding-left: 10px;
+  margin-right: 0px;
+}
+#ufaca{
+  background-color: #cea20a; 
+  opacity: 0.8; 
+  font-family: bebas; 
+  font-size:20px; 
+  text-align: right;
+  padding-right: 10px;
+  margin-left: 0px;
+}

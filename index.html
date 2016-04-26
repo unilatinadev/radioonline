@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Unilatina</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
+    
+
+  </head>
+
+  <body class="layout-dark">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+   
+    <div id="logobase"><img src="images/logobase.png"  width="100%" height="auto"> </div>
+    
+      
+    <!-- Radio duttom-->
+    <div class="list-block">
+              <div> Seleción de Emisora</div>
+  <ul>
+    <!-- Single radio input -->
+    <li>
+   
+      <label class="label-radio item-content">
+        <!-- Checked by default -->
+        <input type="radio" name="my-radio" value="Facativa">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+            <div class="item-title" onclick="window.location = 'faca.html';"><i class="fa fa-rss" aria-hidden="true"></i>  Facatativá</div>
+          </div>
+      </label>
+    </li>
+    <!-- Another radio input -->
+    <li>
+      <label class="label-radio item-content">
+        <input type="radio" name="my-radio" value="Unilatina">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+             <div class="item-title" onclick="window.location = 'radio.html';"><i class="fa fa-users" aria-hidden="true"></i>  Radio Unilatina </div>
+        </div>
+      </label>
+    </li>
+  </ul>
+</div>                      
+    </div>
+    <!-- Views-->
+    <div class="views" id="emisora">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+              <div class="left"><a id="titleunilatina">UNILATINA</a></div>
+            <div class="right">
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>    
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+        
+        <div class="col-100" id="home">
+           <div class="col-100" id="homedos"></div>
+          <div class="col-100" id="play">
+          <div class="row">
+        <div class="col-50" id="uradio" onclick="window.location = 'radio.html';">UNILATINA <BR>RADIO</div>
+        <div class="col-50" id="ufaca" onclick="window.location = 'faca.html';">UNILATINA <BR>FACATATIVA</div>
+      </div>
+      </div>
+	  </div>
+      </div>
+      
+    </div>
+       <!-- enlace app -->     
+  	 
+            
+            
+              
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
