@@ -12,8 +12,20 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
-
+<script type="text/javascript">
+        // Auto Start
+        window.onload = function() { playStream(); };
+        // Code from http://www.joeldare.com/wiki/play_an_mp3_audio_stream_in_phonegap
+        function playStream() {
+          try {
+            var myaudio = new Audio('http://192.99.150.52:1935/shoutcast/sc_yrssw/playlist.m3u8');
+            myaudio.id = 'playerMyAdio';
+            myaudio.play();
+          } catch (e) {
+            alert('no audio support!');
+          }
+        }
+    </script>
   </head>
 
   <body class="layout-dark">
@@ -85,7 +97,9 @@
            <div class="col-100" id="homedos"></div>
           <div class="col-100" id="play">
           <div class="row">
-        <div class="col-50" id="uradio" onclick="window.location = 'radio.html';">UNILATINA <BR>RADIO</div>
+        <div class="col-50" id="uradio" onclick="window.location = 'radio.html';">
+          <button onclick="playStream()">Sonar</button>
+        </div>
         <div class="col-50" id="ufaca" onclick="window.location = 'faca.html';">UNILATINA <BR>FACATATIVA</div>
       </div>
       </div>
