@@ -70,8 +70,12 @@ border-left:0px;
 			text-align: center;
 		}
 #playcontrols #activityindicator, #playcontrols #stopbutton {
-			display: none;
+
 		}
+
+#stopbutton{
+  visibility: visible;
+}
 		
 #textpositiondiv {
 			margin-top: 1px;
@@ -129,4 +133,9 @@ color:#129881;
   text-align: right;
   padding-right: 10px;
   margin-left: 0px;
+}
+
+#stopbutton {
+visibility:hidden;
+
 }
