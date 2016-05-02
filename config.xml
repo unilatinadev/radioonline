@@ -70,16 +70,13 @@
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
-<<<<<<< Updated upstream
   <allow-intent href="geo:*"/>    
-=======
   <allow-intent href="geo:*"/>
   <access origin="maxcdn.bootstrapcdn.com/" launch-external="yes"  />
   <access origin="http://192.99.150.52" launch-external="yes"  />
   <allow-navigation href="http://maxcdn.bootstrapcdn.com/" subdomains="true">
   <allow-navigation href="http://192.99.150.52" subdomains="true">    
->>>>>>> Stashed changes
-   <allow-navigation href="*" /> <!-- The above is equivalent to these three declarations --> 
+   <allow-navigation href="*"/> <!-- The above is equivalent to these three declarations --> 
    <allow-navigation href="http://*/*" /> 
    <allow-navigation href="https://*/*" /> 
    <allow-navigation href="data:*" /> 
