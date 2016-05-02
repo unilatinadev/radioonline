@@ -1,5 +1,5 @@
 
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="unilatina" version="1.0.0">
+  <widgetxmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="unilatina">
   <name>UNILATINA RADIO</name>
   <description>Bienvenido a la aplicación de la radio Unilatina.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">Erik Prieto</author>
