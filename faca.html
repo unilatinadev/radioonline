@@ -12,45 +12,26 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 <script type="text/javascript">
-        // Auto Start
 
-       var isPlaying = false;
-        // Code from erikpieto/play_an_mp3_audio_stream_in_phonegap
-        
-        function playStream() {
-            try {
-              var myaudio = new Audio('http://192.99.150.52:1935/shoutcast/sc_yrssw/playlist.m3u8');
-              myaudio.play();
-              document.getElementById("playbutton").style.visibility="hidden";
-              document.getElementById("playbutton").style.height="0px";
-              document.getElementById("stopbutton").style.visibility="visible";
-              document.getElementById("stopbutton").style.height="120px";
+var myaudio = new Audio('http://192.99.150.52:1935/shoutcast/sc_j4dxj/playlist.m3u8');
 
 
-             } catch (e) {
-              alert('Error en la reprodución');
-          }
-        
-        }
+function playAudio() {
+    myaudio.play();
+    document.getElementById("playbutton").style.width="0px";
+    document.getElementById("stopbutton").style.width="120px";
+}
 
-        function stopStream() {
+function pauseAudio() {
+  myaudio.pause();
+  document.getElementById("playbutton").style.width="120px";
+  document.getElementById("stopbutton").style.width="0px";
+}
 
-            try {
-              var myaudio = new Audio('http://192.99.150.52:1935/shoutcast/sc_yrssw/playlist.m3u8');
-              myaudio.pause();
-              document.getElementById("stopbutton").style.visibility="hidden";
-              document.getElementById("stopbutton").style.height="0px";
-              document.getElementById("playbutton").style.visibility="visible";
-              document.getElementById("playbutton").style.height="120px";
+</script>
 
-             } catch (e) {
-              alert('Error en la reprodución');
-          }
-
-        }
-
-    </script>
 
   </head>
 
@@ -123,8 +104,8 @@
           <div class="col-100" id="play">
              
           <div id="playcontrols">
-     <a href="#" onClick="playStream()"><img id="playbutton" src="images/playbutton2.png" height="120px" /></a>
-      <a href="#" onClick="stopStream()"><img id="stopbutton" src="images/stopbutton2.png" height="120px" /> </a>
+     <a href="#" onClick="playAudio()"><img id="playbutton" src="images/playbutton2.png" height="120px" /></a>
+      <a href="#" onClick="pauseAudio()"><img id="stopbutton" src="images/stopbutton2.png" height="120px" /> </a>
     </div>
       </div>
     </div>
